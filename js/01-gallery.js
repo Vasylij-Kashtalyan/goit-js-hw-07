@@ -26,11 +26,12 @@ function onGalleryClick(event) {
     const instance = basicLightbox.create(`
      <div class="modal">
         <p>
-        <img src = ${original}>
+        <img src = ${original} width="1200" height="600">
         </p>
      </div>
      `)
     instance.show()
+
 };
 galleryEll.insertAdjacentHTML("beforeend",createGalleryCard);
 galleryEll.addEventListener("click", onGalleryClick);
